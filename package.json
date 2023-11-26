@@ -1,0 +1,35 @@
+{
+  "name": "cypress_cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rm -r cypress/cucumber-json/*.json && rm -r ./reports/cucumber-html-report/",
+    "test:spec": "cypress run --spec cypress/e2e/newtours.feature && node cucumber-html-report.js",
+    "cypress:open": "cypress open",
+    "cypress:tests": "cypress run --browser chrome && node cucumber-html-report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1",
+    "multiple-cucumber-html-reporter": "^3.5.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "cucumber-html-reporter": "^7.1.1",
+    "prettier": "^3.1.0"
+  }
+}

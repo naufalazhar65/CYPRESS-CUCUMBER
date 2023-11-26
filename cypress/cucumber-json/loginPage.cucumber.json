@@ -1,0 +1,142 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login and Logout",
+    "line": 1,
+    "id": "login-and-logout",
+    "tags": [],
+    "uri": "loginPage.feature",
+    "elements": [
+      {
+        "id": "login-and-logout;user-logs-in-with-credentials",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "User logs in with credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 3354000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user logs in with \"standard_user\" and \"secret_sauce\"",
+            "result": {
+              "status": "passed",
+              "duration": 2708000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the user should be redirected to the Products page",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-and-logout;user-sees-an-error-message-for-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "User sees an error message for invalid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "the user is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 2280000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "the user logs in with \"user1\" and \"invalidPass123\"",
+            "result": {
+              "status": "passed",
+              "duration": 2608000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "an error message should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-and-logout;user-logs-out-after-successful-login",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "User logs out after successful login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "the user is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 2523000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the user logs in with \"standard_user\" and \"secret_sauce\"",
+            "result": {
+              "status": "passed",
+              "duration": 2667000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the user logs out",
+            "result": {
+              "status": "passed",
+              "duration": 2487000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the user should be redirected to the Swag Labs homepage",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
