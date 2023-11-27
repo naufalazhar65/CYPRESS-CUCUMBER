@@ -15,12 +15,9 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-// before(() => {
-//     cy.get('.mz-sub-menu-96.dropdown-menu')
-// 		.find('li')
-// 		.contains('Login')
-// 		.click({ force: true })
-// });
+before(() => {
+    cy.reload()
+});
 
 after(() => {
     cy.reload()

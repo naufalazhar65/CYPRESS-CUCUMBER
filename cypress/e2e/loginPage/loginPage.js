@@ -32,7 +32,6 @@ And('the user should see the "Forgotten Password" link', () => {
 When('the user enters valid login credentials', () => {
     cy.get('#input-email').type('naufalazhar65@gmail.com');
     cy.get('#input-password').type('naufal354');
-    cy.wait(2000);
 });
 
 And('the user clicks the login button', () => {
