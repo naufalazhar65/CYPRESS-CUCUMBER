@@ -1,32 +1,34 @@
-Feature: Login and Logout
-
-    Scenario Outline: User logs in with credentials
+Feature: Login Page Functionality
+    Background:
         Given the user is on the login page
-        When the user logs in with "<username>" and "<password>"
-        Then the user should be redirected to the Products page
 
-        Examples:
-            | username      | password     |
-            | standard_user | secret_sauce |
+    Scenario: Verify Elements on LoginPage
+        Then the user should see the username input field
+        And the user should see the password input field
+        And the user should see the login button
+        And the user should see the "Forgotten Password" link
 
+    Scenario: Login with Valid Credentials
+        When the user enters valid login credentials
+        And the user clicks the login button
+        Then the user should be redirected to the dashboard
 
-    Scenario Outline: User sees an error message for invalid credentials
-        Given the user is on the login page
-        When the user logs in with "<username>" and "<password>"
+    Scenario: Login with Invalid Credentials
+        When the user enters invalid login credentials
+        And the user clicks the login button
         Then an error message should be displayed
+        And the user should not be redirected
 
-        Examples:
-            | username | password |
-            | user1    | invalidPass123  |
+    Scenario: Forgot Password Link
+        When the user clicks on the "Forgotten Password" link
+        Then the user should be on the password recovery page
+        And the user should see the email input field
+        And the user should see the submit button
 
-
-    Scenario Outline: User logs out after successful login
-        Given the user is on the login page
-        When the user logs in with "<username>" and "<password>"
-        And the user logs out
-        Then the user should be redirected to the Swag Labs homepage
-
-        Examples:
-            | username      | password     |
-            | standard_user | secret_sauce |
-
+    Scenario: Back to Login from Password Recovery
+        When the user clicks on the "Forgotten Password" link
+        When the user navigates back to the login page from the password recovery page
+        Then the user should see the username input field
+        And the user should see the password input field
+        And the user should see the login button
+        And the user should see the "Forgotten Password" link

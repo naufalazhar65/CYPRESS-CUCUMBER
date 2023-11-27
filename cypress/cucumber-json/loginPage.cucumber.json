@@ -1,85 +1,175 @@
 [
   {
     "keyword": "Feature",
-    "name": "Login and Logout",
+    "name": "Login Page Functionality",
     "line": 1,
-    "id": "login-and-logout",
+    "id": "login-page-functionality",
     "tags": [],
     "uri": "loginPage.feature",
     "elements": [
       {
-        "id": "login-and-logout;user-logs-in-with-credentials",
+        "id": "login-page-functionality;verify-elements-on-loginpage",
         "keyword": "Scenario",
-        "line": 10,
-        "name": "User logs in with credentials",
+        "line": 5,
+        "name": "Verify Elements on LoginPage",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 3,
             "name": "the user is on the login page",
             "result": {
               "status": "passed",
-              "duration": 3354000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "the user logs in with \"standard_user\" and \"secret_sauce\"",
-            "result": {
-              "status": "passed",
-              "duration": 2708000000
+              "duration": 4347000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "the user should be redirected to the Products page",
+            "name": "the user should see the username input field",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user should see the password input field",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user should see the login button",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user should see the \"Forgotten Password\" link",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
             }
           }
         ]
       },
       {
-        "id": "login-and-logout;user-sees-an-error-message-for-invalid-credentials",
+        "id": "login-page-functionality;login-with-valid-credentials",
         "keyword": "Scenario",
-        "line": 20,
-        "name": "User sees an error message for invalid credentials",
+        "line": 11,
+        "name": "Login with Valid Credentials",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
+            "line": 3,
             "name": "the user is on the login page",
             "result": {
               "status": "passed",
-              "duration": 2280000000
+              "duration": 2989000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 15,
-            "name": "the user logs in with \"user1\" and \"invalidPass123\"",
+            "line": 12,
+            "name": "the user enters valid login credentials",
             "result": {
               "status": "passed",
-              "duration": 2608000000
+              "duration": 2686000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user clicks the login button",
+            "result": {
+              "status": "passed",
+              "duration": 4196000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
+            "line": 14,
+            "name": "the user should be redirected to the dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-page-functionality;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Login with Invalid Credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "the user is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 6963000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "the user enters invalid login credentials",
+            "result": {
+              "status": "passed",
+              "duration": 2721000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the user clicks the login button",
+            "result": {
+              "status": "passed",
+              "duration": 2757000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
             "name": "an error message should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user should not be redirected",
             "result": {
               "status": "passed",
               "duration": 5000000
@@ -88,51 +178,141 @@
         ]
       },
       {
-        "id": "login-and-logout;user-logs-out-after-successful-login",
+        "id": "login-page-functionality;forgot-password-link",
         "keyword": "Scenario",
-        "line": 31,
-        "name": "User logs out after successful login",
+        "line": 22,
+        "name": "Forgot Password Link",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 24,
+            "line": 3,
             "name": "the user is on the login page",
             "result": {
               "status": "passed",
-              "duration": 2523000000
+              "duration": 3295000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 25,
-            "name": "the user logs in with \"standard_user\" and \"secret_sauce\"",
+            "line": 23,
+            "name": "the user clicks on the \"Forgotten Password\" link",
             "result": {
               "status": "passed",
-              "duration": 2667000000
+              "duration": 3677000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the user should be on the password recovery page",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the user should see the email input field",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 26,
-            "name": "the user logs out",
+            "name": "the user should see the submit button",
             "result": {
               "status": "passed",
-              "duration": 2487000000
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-page-functionality;back-to-login-from-password-recovery",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Back to Login from Password Recovery",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "the user is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 3242000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "the user clicks on the \"Forgotten Password\" link",
+            "result": {
+              "status": "passed",
+              "duration": 2340000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "the user navigates back to the login page from the password recovery page",
+            "result": {
+              "status": "passed",
+              "duration": 432000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
-            "name": "the user should be redirected to the Swag Labs homepage",
+            "line": 31,
+            "name": "the user should see the username input field",
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "the user should see the password input field",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "the user should see the login button",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "the user should see the \"Forgotten Password\" link",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
             }
           }
         ]

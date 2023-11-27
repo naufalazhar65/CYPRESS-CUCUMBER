@@ -9,6 +9,7 @@ module.exports = defineConfig({
 	video: false,
 
 	e2e: {
+		baseUrl : "https://ecommerce-playground.lambdatest.io",
 		setupNodeEvents(on, config) {
 			on('file:preprocessor', cucumber())
 		},

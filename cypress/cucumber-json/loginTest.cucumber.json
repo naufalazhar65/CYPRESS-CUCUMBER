@@ -1,0 +1,172 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "User Login",
+    "line": 1,
+    "id": "user-login",
+    "tags": [],
+    "uri": "loginTest.feature",
+    "elements": [
+      {
+        "id": "user-login;successful-login",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Successful login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 4376000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user logs in with \"naufalazhar65@gmail.com\" and \"naufal354\"",
+            "result": {
+              "status": "passed",
+              "duration": 2715000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user clicks the login button",
+            "result": {
+              "status": "passed",
+              "duration": 4193000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user should be redirected to the dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-login;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Login with invalid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 3844000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "the user logs in with \"invalidUsername\" and \"invalidPassword\"",
+            "result": {
+              "status": "passed",
+              "duration": 2668000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the user clicks the login button",
+            "result": {
+              "status": "passed",
+              "duration": 3658000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "an error message should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-login;forgot-password-functionality",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Forgot password functionality",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 3003000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the user clicks on the \"Forgotten Password\" link",
+            "result": {
+              "status": "passed",
+              "duration": 1877000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "provides a valid email for password recovery",
+            "result": {
+              "status": "passed",
+              "duration": 410000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "submits the password recovery form",
+            "result": {
+              "status": "passed",
+              "duration": 1011000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "a success message for password recovery should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
