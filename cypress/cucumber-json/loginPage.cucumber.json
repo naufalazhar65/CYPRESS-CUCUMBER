@@ -22,7 +22,7 @@
             "name": "the user is on the login page",
             "result": {
               "status": "passed",
-              "duration": 4347000000
+              "duration": 5903000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "the user should see the username input field",
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 19000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "the user is on the login page",
             "result": {
               "status": "passed",
-              "duration": 2989000000
+              "duration": 4038000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "the user enters valid login credentials",
             "result": {
               "status": "passed",
-              "duration": 2686000000
+              "duration": 2695000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "the user clicks the login button",
             "result": {
               "status": "passed",
-              "duration": 4196000000
+              "duration": 7565000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "the user should be redirected to the dashboard",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 40000000
             }
           }
         ]
@@ -132,7 +132,7 @@
             "name": "the user is on the login page",
             "result": {
               "status": "passed",
-              "duration": 6963000000
+              "duration": 3348000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "the user enters invalid login credentials",
             "result": {
               "status": "passed",
-              "duration": 2721000000
+              "duration": 2704000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "the user clicks the login button",
             "result": {
               "status": "passed",
-              "duration": 2757000000
+              "duration": 3052000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "an error message should be displayed",
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 19000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "the user should not be redirected",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 4000000
             }
           }
         ]
@@ -192,7 +192,7 @@
             "name": "the user is on the login page",
             "result": {
               "status": "passed",
-              "duration": 3295000000
+              "duration": 3657000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "the user clicks on the \"Forgotten Password\" link",
             "result": {
               "status": "passed",
-              "duration": 3677000000
+              "duration": 4463000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "the user should see the email input field",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 3000000
             }
           },
           {
@@ -232,7 +232,7 @@
             "name": "the user should see the submit button",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 4000000
             }
           }
         ]
@@ -252,7 +252,7 @@
             "name": "the user is on the login page",
             "result": {
               "status": "passed",
-              "duration": 3242000000
+              "duration": 2589000000
             }
           },
           {
@@ -262,7 +262,7 @@
             "name": "the user clicks on the \"Forgotten Password\" link",
             "result": {
               "status": "passed",
-              "duration": 2340000000
+              "duration": 2796000000
             }
           },
           {
@@ -272,7 +272,7 @@
             "name": "the user navigates back to the login page from the password recovery page",
             "result": {
               "status": "passed",
-              "duration": 432000000
+              "duration": 569000000
             }
           },
           {
@@ -282,7 +282,7 @@
             "name": "the user should see the username input field",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 7000000
             }
           },
           {
@@ -292,7 +292,7 @@
             "name": "the user should see the password input field",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 5000000
             }
           },
           {
@@ -302,7 +302,7 @@
             "name": "the user should see the login button",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 4000000
             }
           },
           {
@@ -312,7 +312,7 @@
             "name": "the user should see the \"Forgotten Password\" link",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 12000000
             }
           }
         ]

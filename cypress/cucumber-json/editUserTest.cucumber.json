@@ -1,0 +1,252 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Edit User Profile",
+    "line": 1,
+    "id": "edit-user-profile",
+    "tags": [],
+    "uri": "editUserTest.feature",
+    "elements": [
+      {
+        "id": "edit-user-profile;navigate-to-edit-user-page",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Navigate to Edit User Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is logged in",
+            "result": {
+              "status": "passed",
+              "duration": 11015000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user navigates to the Edit User page",
+            "result": {
+              "status": "passed",
+              "duration": 6622000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user should be on the Edit User page",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user should see the user details form",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "edit-user-profile;edit-user-profile",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Edit User Profile",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is logged in",
+            "result": {
+              "status": "passed",
+              "duration": 6185000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user navigates to the Edit User page",
+            "result": {
+              "status": "passed",
+              "duration": 1871000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user updates the user details with new information",
+            "result": {
+              "status": "passed",
+              "duration": 339000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user submits the updated details",
+            "result": {
+              "status": "passed",
+              "duration": 4593000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "a success message for profile update should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user details should be updated",
+            "result": {
+              "status": "passed",
+              "duration": 780000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "edit-user-profile;edit-user-profile-with-invalid-information",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Edit User Profile with Invalid Information",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is logged in",
+            "result": {
+              "status": "passed",
+              "duration": 8014000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user navigates to the Edit User page",
+            "result": {
+              "status": "passed",
+              "duration": 8932000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the user updates the user details with invalid information",
+            "result": {
+              "status": "passed",
+              "duration": 2151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user submits the updated details",
+            "result": {
+              "status": "passed",
+              "duration": 1236000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "an error message for invalid information should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the user details should not be updated",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "edit-user-profile;cancel-edit-user-profile",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Cancel Edit User Profile",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is logged in",
+            "result": {
+              "status": "passed",
+              "duration": 11166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user navigates to the Edit User page",
+            "result": {
+              "status": "passed",
+              "duration": 4554000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the user navigates back without saving changes",
+            "result": {
+              "status": "passed",
+              "duration": 6135000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the user details should remain unchanged",
+            "result": {
+              "status": "passed",
+              "duration": 2437000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
