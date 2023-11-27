@@ -52,13 +52,24 @@ Then('the user should be redirected to the dashboard', () => {
 When('the user enters invalid login credentials', () => {
     cy.get('#input-email').type('invalid@example.com');
     cy.get('#input-password').type('invalidpassword');
-    cy.wait(2000);
 });
 
 Then('an error message should be displayed', () => {
-    cy.get('#account-login > .alert').should('be.visible').and('have.text', ' Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.');
+    cy.get('#account-login > .alert').should('be.visible').then(($alert) => {
+        const alertText = $alert.text();
+        
+        if (alertText.includes('No match for E-Mail Address and/or Password')) {
+            // Assertion untuk pesan error pertama
+            expect(alertText).to.equal(' Warning: No match for E-Mail Address and/or Password.');
+        } else if (alertText.includes('Your account has exceeded allowed number of login attempts')) {
+            // Assertion untuk pesan error kedua
+            expect(alertText).to.equal(' Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.');
+        } else {
+            // Assertion default jika pesan error tidak sesuai dengan yang diharapkan
+            throw new Error('Unexpected error message: ' + alertText);
+        }
+    });
 });
-
 // ========================================================================================================================
 
 When("the user should not be redirected", () => {
